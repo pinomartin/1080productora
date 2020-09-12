@@ -27,12 +27,12 @@ const settingsDefault = {
 
 
 const parallax = {
-    // delay: 500 ,
+    delay: 600 ,
     distance: '0%', 
     duration: 1400, 
     easing: 'ease-in-out', 
     interval: 600, 
-    opacity: 0.10, 
+    opacity: 0, 
     origin: 'bottom',
     rotate: {
         x: 0,
@@ -49,19 +49,61 @@ sr.reveal('.jumbotron', parallax)
 
 
 const servicios = {
-    delay: 0 ,
-    distance: '', 
-    duration: 0, 
-    easing: '', 
-    interval: 0, 
+    delay: 100 ,
+    distance: '0%', 
+    duration: 1500, 
+    easing: 'ease-in-out', 
+    interval: 500, 
     opacity: 0, 
-    origin: '',
+    origin: 'bottom',
+    rotate: {
+        x: 0,
+        y: -100,
+        z: 0
+    },          
+    scale: 1,
+    desktop: true, 
+    mobile: false 
+}
+
+sr.reveal('.service-card', servicios );
+
+const parrafoAbout = {
+    delay: 50 ,
+    distance: '20%', 
+    duration: 1500, 
+    easing: 'ease-in-out', 
+    interval: 500, 
+    opacity: 0, 
+    origin: 'bottom',
     rotate: {
         x: 0,
         y: 0,
         z: 0
     },          
-    scale: 0,
+    scale: 1,
     desktop: true, 
-    mobile: true 
+    mobile: false 
 }
+sr.reveal('.parrafo', parrafoAbout);
+
+
+const blockquotes = {
+    delay: 50 ,
+    distance: '30%', 
+    duration: 1500, 
+    easing: 'ease-in-out', 
+    interval: 400, 
+    opacity: 0, 
+    origin: 'right',
+    rotate: {
+        x: 0,
+        y: 0,
+        z: 0
+    },          
+    scale: 1,
+    desktop: true, 
+    mobile: false 
+}
+
+sr.reveal('.blockquotes-container', blockquotes);
