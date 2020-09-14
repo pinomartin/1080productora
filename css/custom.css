@@ -217,7 +217,7 @@ body{
     /*  object-fit is not supported on IE  */
     object-fit: cover;
     object-position: center;
-    opacity:0.5;
+    opacity:0.75;
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
     color-stop(0.00,  rgba(0,0,0,1)),
     color-stop(0.35,  rgba(0,0,0,1)),
@@ -285,15 +285,19 @@ body{
   color: var(--secondary-color);
   font-size: 1.4em;
   line-height: 2.2rem;
+  font-weight: 300;
   margin-bottom: 2rem;
   text-align: center;
-  text-shadow: 1px 2px 4px var(--alter-color);
+  text-transform: uppercase;
+  /* text-shadow: 1px 2px 4px var(--test-color); */
   
 }
 
 .about p span{
   color: var(--alter-color);
   font: 1.6em;
+  font-weight: 500;
+  text-shadow: 1px 2px 10px var(--alter-color);
 }
 
 
