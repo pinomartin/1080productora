@@ -46,6 +46,27 @@ const parallax = {
 
 sr.reveal('.jumbotron', parallax)
 
+const waves = {
+    delay: 700 ,
+    distance: '0%', 
+    duration: 1000, 
+    easing: 'ease-in-out', 
+    interval: 700, 
+    opacity: 0.7, 
+    origin: 'bottom',
+    rotate: {
+        x: 0,
+        y: 0,
+        z: 0
+    },          
+    scale: 1,
+    desktop: true, 
+    mobile: false 
+}
+
+
+
+sr.reveal('.video', waves)
 
 
 const servicios = {
