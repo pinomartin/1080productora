@@ -33,9 +33,10 @@
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#servicios">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Reel</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about"></a></li> -->
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">1080</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://instagram.com" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://instagram.com" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -58,25 +59,81 @@
                 </div>
 
                 <div class="row justify-content-center justify-content-md-between text-center">
-                    <div class="col-8 col-md-3 service-card">
-                        <!-- <span class="service-icon">
-                            <i class="fa fa-camera" aria-hidden="true"></i>
-                        </span> -->
-                        <img src="/assets/img/logo/camara-filmante.svg" class="img-fluid" alt="">
-                        <h4>Camera</h4>
-                        <p class="small">Servicio de Filmacion</p>
-                    </div>
-                    <div class="col-8 col-md-3 service-card">
+                    <div class="col-8 col-md-3 card-container">
+                     
+                        <div class="card card-flip">
+                            <div class="front card-block">
+                                <img src="/assets/img/cards/idea.png" alt="Servicio de Idea" class="img-fluid">
+                              <!-- To add FontAwesome Icons use Unicode characters and to set size use font-size instead of fa-*x because when calculating the height (see js), the size of the icon is not calculated if using classes -->
+                              
+                              <h4 class="card-title">CREAMOS TUS IDEAS</h4>
+                              <h6 class="card-subtitle text-muted">Front Sub-title</h6>
+                              <p class="card-text">Front Text</p>
+                            </div>
+                            <div class="back card-block">
+                              <p>
+                                Some example text<br> to
+                                <br> increase
+                                <br> card
+                                <br> height
+                                <br> to
+                                <br> something
+                                <br> long
+                              </p>
+                              
+                            </div>
+                          </div>
 
-                        <img src="/assets/img/logo/render-image.svg" class="img-fluid" alt="">
-                        <h4>Camera</h4>
-                        <p class="small">Servicio de Filmacion</p>
                     </div>
-                    <div class="col-8 col-md-3 service-card">
+                    <div class="col-8 col-md-3 card-container">
 
-                        <img src="/assets/img/logo/video-files.svg" class="img-fluid" alt="">
-                        <h4>Camera</h4>
-                        <p class="small">Servicio de Filmacion</p>
+                        <div class="card card-flip">
+                            <div class="front card-block">
+                                <img src="/assets/img/cards/grafico.png" alt="Servicio de Idea" class="img-fluid">
+                              <!-- To add FontAwesome Icons use Unicode characters and to set size use font-size instead of fa-*x because when calculating the height (see js), the size of the icon is not calculated if using classes -->
+                              
+                              <h4 class="card-title">LAS POTENCIAMOS</h4>
+                              <h6 class="card-subtitle text-muted">LAS POTENCIAMOS</h6>
+                              <p class="card-text">Front Text</p>
+                            </div>
+                            <div class="back card-block">
+                              <p>
+                                Some example text<br> to
+                                <br> increase
+                                <br> card
+                                <br> height
+                                <br> to
+                                <br> something
+                                <br> long
+                              </p>
+                              
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-8 col-md-3 card-container">
+
+                        <div class="card card-flip">
+                            <div class="front card-block">
+                                <img src="/assets/img/cards/puzzle.png" alt="Servicio de Idea" class="img-fluid">
+                              <!-- To add FontAwesome Icons use Unicode characters and to set size use font-size instead of fa-*x because when calculating the height (see js), the size of the icon is not calculated if using classes -->
+                              
+                              <h4 class="card-title">LE DAMOS FORMA</h4>
+                              <h6 class="card-subtitle text-muted">LE DAMOS FORMA</h6>
+                              <p class="card-text">Front Text</p>
+                            </div>
+                            <div class="back card-block">
+                              <p>
+                                Some example text<br> to
+                                <br> increase
+                                <br> card
+                                <br> height
+                                <br> to
+                                <br> something
+                                <br> long
+                              </p>
+                              
+                            </div>
+                          </div>
                     </div>
                 </div>
             </div>
@@ -244,15 +301,28 @@
 
         </section>
 
+        
+    </main>
 
-        <section class="section-container" id="about">
-            <div class="container">
-                <div class="row text-center">
-
-                </div>
+    <!--Footer-->
+    <footer>
+        
+        <section class="section-container">
+            <div class="container-fluid bg-warning">
+              <div class="row justify-content-center">
+                  <div class="col-12 col-md-3 text-center">
+                        sdasdsd
+                  </div>
+                  <div class="col-12 col-md-3 text-center">
+                        asdasdas
+                  </div>
+                  <div class="col-12 col-md-3 text-center">
+                        asdasdasd
+                  </div>
+              </div>
             </div>
         </section>
-    </main>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -267,6 +337,7 @@
     </script>
     <script src="js/navScripts.js"></script>
     <script src="js/scrollReveal.js"></script>
+    <script src="js/cards.js"></script>
 </body>
 
 </html>

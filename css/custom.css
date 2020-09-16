@@ -52,6 +52,7 @@ body{
   #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: var(--primary-color);
   }
+
   
   @media (min-width: 992px) {
     #mainNav {
@@ -117,7 +118,7 @@ body{
     font-family: var(--font-primary);
   }
   header.masthead .masthead-heading {
-    font-size: 3.25rem;
+    font-size: 2.5rem;
     font-weight: 700;
     line-height: 3.25rem;
     margin-bottom: 2rem;
@@ -171,9 +172,11 @@ body{
   #servicios{
     padding: 7rem 0;
   }
+
+  /*
   .service-card{
-    /* background-color: rgba(220, 220, 220, 0.349); */
-    padding: 2rem 1rem;
+    /* background-color: rgba(220, 220, 220, 0.349); 
+    /* padding: 2rem 1rem;
     border-radius: 6px 38px 18px 13px;
     background-color: var(--test-color);
     -moz-border-radius: 6px 38px 18px 13px;
@@ -181,18 +184,78 @@ body{
     -webkit-box-shadow: 4px -1px 11px -5px rgba(0,0,0,0.65);
     -moz-box-shadow: 4px -1px 11px -5px rgba(0,0,0,0.65);
     box-shadow: 4px -1px 11px -5px rgba(0,0,0,0.65) var(--primary-color);
-    margin: 1.2rem 0;
-    /* background-color: #000; */
-  }
+    margin: 1.2rem 0; 
+     background-color: #000; 
+  }*/
 
   @media only screen and (min-width: 768px) {
-    .service-card{
+    /* .service-card{
       transition: all 0.3s ease-in-out;
     }
     .service-card:hover{
       transform: scale(1.05);
-    }
+    } */
   }
+
+  .card-block .btn-outline-primary {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  .card {
+    margin: 20px 0;
+  }
+  
+  /* Flip Cards CSS */
+  .card-container {
+    perspective: 700px;
+    margin: 2rem 0;
+    border-radius: 10px;
+  }
+  .card-flip {
+    position: relative;
+    width: 100%;
+    transform-style: preserve-3d;
+    height: auto;
+    transition: all 0.5s ease-out;
+    background: transparent;
+    border: none;
+    color: var(--primary-color);
+  }
+  
+  .card-flip div {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    border: none;
+  }
+  
+  .card-flip .front {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card-flip .back {
+    position: relative;
+    z-index: 0;
+    transform: rotateY(-180deg);
+  }
+  
+  .card-container:hover .card-flip {
+    transform: rotateY(180deg);
+  }
+  
+
+
+
+
+
+
 
   /* span.service-icon{
     background-color: var(--primary-color);
@@ -277,7 +340,7 @@ body{
   margin-bottom: 2rem;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 1px 3px 4px var(--test-color);
+  /* text-shadow: 1px 3px 4px var(--test-color); */
   
 }
 
