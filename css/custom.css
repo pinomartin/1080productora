@@ -5,7 +5,7 @@
   --test-color: #EDDBCD;
   --alter-color: #E39B17;
   /* --font-primary: 'Quicksand', sans-serif; */
-  --font-primary: 'Questrial', sans-serif;
+  --font-primary: 'Work Sans', sans-serif;
 }
 
 
@@ -15,6 +15,7 @@
 
 body{
   background-color: var(--background-color);
+  font-family: var(--font-primary);
 }
 
 
@@ -197,61 +198,72 @@ body{
     } */
   }
 
-  .card-block .btn-outline-primary {
-    width: 100%;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-  }
-  
-  .card {
-    margin: 20px 0;
-  }
-  
-  /* Flip Cards CSS */
-  .card-container {
+.card-container {
     perspective: 700px;
-    margin: 2rem 0;
-    border-radius: 10px;
-  }
-  .card-flip {
-    position: relative;
-    width: 100%;
+    /* border: 1px solid #ffffff; */
+    display: grid;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+.card-flip, .card-container {
     transform-style: preserve-3d;
-    height: auto;
-    transition: all 0.5s ease-out;
-    background: var(--background-color);
-    border: none;
-    color: var(--primary-color);
-  }
-  
-  .card-flip div {
+    transition: all 0.9s ease;
+}
+
+.card-flip {
+  display: grid; 
+  grid-template: 1fr / 1fr;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+  color: var(--primary-color);
+}
+
+.card-flip div {
     backface-visibility: hidden;
     transform-style: preserve-3d;
-    height: 100%;
-    width: 100%;
-    border: none;
-  }
-  
-  .card-flip .front {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .card-flip .back {
-    position: relative;
-    z-index: 0;
+}
+
+.front {
+  grid-area: frontAndBack;
+  background-color: transparent;
+}
+
+.front h4 {
+  padding: 1rem 0 1rem 0;
+}
+
+.back {
     transform: rotateY(-180deg);
-  }
-  
-  .card-container:hover .card-flip {
+    grid-area: frontAndBack;
+    background-color: transparent!important;
+}
+
+.back p {
+  padding: 6em 0 0 0;
+}
+
+.back ul {
+  list-style: none!important;
+  margin: 0;
+}
+
+p.medio{
+  padding: 4em 0 0 0;
+}
+
+.card-container:hover .card-flip {
     transform: rotateY(180deg);
-  }
-  
+}
 
 
+@media only screen and (min-width: 768px) {
+.card-container{
+  margin: 0.5rem;
+}
+}
 
 
 
