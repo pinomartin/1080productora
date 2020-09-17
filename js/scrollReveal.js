@@ -87,7 +87,7 @@ const servicios = {
     mobile: false 
 }
 
-sr.reveal('.service-card', servicios );
+sr.reveal('.card-container', servicios );
 
 const parrafoAbout = {
     delay: 50 ,

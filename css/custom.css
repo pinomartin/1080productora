@@ -217,12 +217,15 @@ body{
   grid-template: 1fr / 1fr;
   grid-template-areas: "frontAndBack";
   transform-style: preserve-3d;
-  transition: all 0.7s ease;
+  transition: all 0.9s ease;
   color: var(--primary-color);
+  text-transform: uppercase;
 }
 
 .card-flip div {
     backface-visibility: hidden;
+    -moz-backface-visibility: hidden ;
+    -webkit-backface-visibility: hidden ;
     transform-style: preserve-3d;
 }
 
