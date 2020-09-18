@@ -48,9 +48,29 @@
     <header class="masthead">
         <div class="container">
             <div class="masthead-subheading">Bienvenidos!</div>
-            <div class="masthead-heading text-uppercase">Es un placer conocerte</div>
+            <div class="masthead-heading text-uppercase titulo">Es un placer conocerte</div>
             <a class="btn btn-warning btn-xl text-uppercase js-scroll-trigger" href="#servicios">Mas Info</a>
         </div>
+        <div class="intro">
+            <div class="intro-text">
+                <h1 class="hide">
+                    <span class="text">
+                        Bienvenida la necesidad de decir
+                    </span>
+                </h1>
+                <h1 class="hide">
+                    <span class="text">
+                        una cosa en particular
+                    </span>
+                </h1>
+                <h1 class="hide">
+                    <span class="text">
+                        en un momento determinado.
+                    </span>
+                </h1>
+            </div>
+        </div>
+        <div class="slider"></div>
     </header>
     <main>
         <!--Servicios-->
@@ -88,7 +108,7 @@
                             <div class="card front">
                                 <!-- To add FontAwesome Icons use Unicode characters and to set size use font-size instead of fa-*x because when calculating the height (see js), the size of the icon is not calculated if using classes -->
 
-                                <img src="/assets/img/cards/puzzle.png" alt="Servicio de Idea" class="img-fluid">
+                                <img src="/assets/img/cards/puzzle.png" alt="Creacion de Contenido" class="img-fluid">
                                 <h4 class="card-title">LE DAMOS FORMA</h4>
                                 <!-- <h6 class="card-subtitle text-muted">Front Sub-title</h6>
                               <p class="card-text">Front Text</p> -->
@@ -114,7 +134,7 @@
                             <div class="card front">
                                 <!-- To add FontAwesome Icons use Unicode characters and to set size use font-size instead of fa-*x because when calculating the height (see js), the size of the icon is not calculated if using classes -->
 
-                                <img src="/assets/img/cards/puzzle.png" alt="Servicio de Idea" class="img-fluid">
+                                <img src="/assets/img/cards/grafico.png" alt="Posicion de la Marca" class="img-fluid">
                                 <h4 class="card-title">LAS PONTENCIAMOS</h4>
                                 <!-- <h6 class="card-subtitle text-muted">Front Sub-title</h6>
                               <p class="card-text">Front Text</p> -->
@@ -122,7 +142,7 @@
                             <div class="card back">
                                 <p>
                                     Posicionamos tu Marca, Empresa o Producto en todas las
-                                    Plataformas Online. 
+                                    Plataformas Online.
                                 </p>
 
                             </div>
@@ -254,7 +274,7 @@
                     <div class="col-12 col-md-6 foto-contacto">
                         <!--Foto seccion Formulario Contacto-->
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-9 col-md-6">
                         <div class="text-center">
                             <h2 class="section-heading text-uppercase">Formulario</h2>
                             <h3 class="section-subheading">Dejanos tu consulta y nos comunicaremos a la brevedad</h3>
@@ -278,12 +298,11 @@
                                 </div>
                             </div>
                             <div class="form-row justify-content-center mb-2">
-                                <div class="col-8">
-                                    <input type="number" class="form-control" required placeholder="Telefono"
-                                        id="txtTelefono">
+                                <div class="col-6">
+                                    <textarea class="form-control" name="" id="" rows="6"></textarea>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-warning">Enviar</button>
+                            <button type="submit" class="btn btn-warning mb-3">Enviar</button>
                         </form>
                     </div>
                 </div>
@@ -331,9 +350,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
     <script src="js/navScripts.js"></script>
     <script src="js/scrollReveal.js"></script>
-    <script src="js/cards.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

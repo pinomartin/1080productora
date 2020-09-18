@@ -125,6 +125,42 @@ body{
     margin-bottom: 2rem;
     font-family: var(--font-primary);
   }
+
+  .intro{
+    background: var(--background-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro-text{
+    color: var(--alter-color);
+  }
+
+  .slider{
+    background: var(--alter-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+  }
+
+  .hide{
+    background: var(--background-color);
+    overflow: hidden;
+  }
+
+  .hide span{
+    transform: translateY(100%);
+    display: inline-block;
+  }
   
   @media (min-width: 768px) {
     header.masthead {
@@ -350,7 +386,7 @@ p.medio{
 .about p {
   color: var(--secondary-color);
   font-size: 1.4em;
-  line-height: 2.2rem;
+  line-height: 1.8rem;
   font-weight: 300;
   margin-bottom: 2rem;
   text-align: center;
