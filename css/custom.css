@@ -191,28 +191,41 @@ body{
   /*------WhatsApp Icono */
   .float{
     position:fixed;
-    width:60px;
-    height:60px;
-    bottom:40px;
-    right:40px;
+    width:40px;
+    height:40px;
+    bottom:20px;
+    right:20px;
     background-color:#25d366;
     color:#FFF;
     border-radius:50px;
     text-align:center;
-    font-size:30px;
+    font-size:20px;
     box-shadow: 2px 1px 3px var(--test-color);
     z-index:100;
     transition: all 0.3s ease-in-out;
   }
   
   .my-float{
-    margin-top:16px;
+    margin-top:10px;
   }
 
   .float:hover{
     background-color:#1fb154;
     color: #fff;
     transform: scale(1.1);
+  }
+
+  @media (min-width: 768px) {
+    .float{
+      width:60px;
+      height:60px;
+      bottom:40px;
+      right:40px;
+      font-size:30px;
+    }
+    .my-float{
+      margin-top:16px;
+    }
   }
 
 
