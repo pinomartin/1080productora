@@ -8,7 +8,15 @@
   --font-primary: 'Kumbh Sans', sans-serif;
 }
 
+::-moz-selection { 
+  color: var(--background-color);
+  background: var(--alter-color);
+}
 
+::selection {
+  color: var(--background-color);
+  background: var(--primary-color);
+}
 /* html{
     scroll-behavior: smooth;
 } */
@@ -290,7 +298,7 @@ body{
     perspective: 700px;
     /* border: 1px solid #ffffff; */
     display: grid;
-    padding: 1rem;
+    padding: 0.2rem;
     margin-bottom: 2rem;
     border-radius: 8px;
 }
@@ -353,7 +361,10 @@ p.medio{
 @media only screen and (min-width: 768px) {
 .card-container{
   margin: 0.5rem;
+  padding: 1rem;
 }
+
+
 }
 
 
@@ -513,23 +524,28 @@ video{
 
 
   /*-------------Contacto-----------*/
+  #contacto{
+    padding: 0 1rem;
+  }
+
   .contacto{
     background-color: black;
     border: none;
     border-radius: 6px 38px 18px 13px;
+    padding: 0 1rem;
   }
 
   @media only screen and (min-width: 768px) {
     .contacto{
-      border: 8px double var(--primary-color);
-      
+      /* border: 10px double var(--primary-color); */
     }
     
   }
 
   .foto-contacto{
    background-image: url(/assets/img/header1.jpg);
-   background-position: center;
+   background-position: center center;
    background-repeat: no-repeat;
-  background-size: cover;
+   background-size: cover;
+   border-radius: 0.8rem;
   }
