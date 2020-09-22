@@ -126,6 +126,26 @@ body{
     font-family: var(--font-primary);
   }
 
+  @media (min-width: 768px) {
+    header.masthead {
+      padding-top: 17rem;
+      padding-bottom: 12.5rem;
+    }
+    header.masthead .masthead-subheading {
+      font-size: 2.25rem;
+      font-style: italic;
+      line-height: 2.25rem;
+      margin-bottom: 2rem;
+    }
+    header.masthead .masthead-heading {
+      font-size: 4.5rem;
+      font-weight: 700;
+      line-height: 4.5rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  /*------------------Slider*/
   .intro{
     background: var(--background-color);
     position: fixed;
@@ -161,25 +181,12 @@ body{
     transform: translateY(100%);
     display: inline-block;
   }
-  
-  @media (min-width: 768px) {
-    header.masthead {
-      padding-top: 17rem;
-      padding-bottom: 12.5rem;
-    }
-    header.masthead .masthead-subheading {
-      font-size: 2.25rem;
-      font-style: italic;
-      line-height: 2.25rem;
-      margin-bottom: 2rem;
-    }
-    header.masthead .masthead-heading {
-      font-size: 4.5rem;
-      font-weight: 700;
-      line-height: 4.5rem;
-      margin-bottom: 4rem;
-    }
+
+  .text{
+    font-style: italic;
   }
+  
+  
 
   /*------WhatsApp Icono */
   .float{
@@ -420,6 +427,7 @@ p.medio{
   font-size: 1.4em;
   line-height: 1.8rem;
   font-weight: 300;
+  letter-spacing: 2px;
   margin-bottom: 2rem;
   text-align: center;
   text-transform: uppercase;
@@ -494,8 +502,16 @@ video{
   /*-------------Contacto-----------*/
   .contacto{
     background-color: black;
-    border: 8px double var(--primary-color);
+    border: none;
     border-radius: 6px 38px 18px 13px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .contacto{
+      border: 8px double var(--primary-color);
+      
+    }
+    
   }
 
   .foto-contacto{

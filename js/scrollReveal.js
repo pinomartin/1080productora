@@ -25,6 +25,28 @@ const settingsDefault = {
     mobile: true 
 }
 
+/*VER ESTO de aca abajo*/
+
+
+const whatsappIcon = {
+    delay: 0 , //ms
+    distance: '100%', // ('px','rem','%')
+    duration: 10, //ms
+    easing: 'ease-in-out', // ('ease','ease-in','step-start','ease-in-out')
+    interval: 0, //ms (600=60fps)
+    opacity: 1, // (0 to 1)
+    origin: 'right', //('top','left','right','bottom')
+    rotate: {
+        x: 0,
+        y: 0,
+        z: 0
+    },          //(xe. 20)
+    scale: 1, // (0 to 1)
+    desktop: true, 
+    mobile: false 
+}
+
+sr.reveal('.float', whatsappIcon)
 
 const parallax = {
     delay: 600 ,

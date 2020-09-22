@@ -37,7 +37,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Reel</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">1080</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contacto">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://instagram.com"
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://www.instagram.com/1080productoraudiovisual/"
                             target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://facebook.com/1080productoraaudiovisual"
                             target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
@@ -77,8 +77,9 @@
         <div class="slider"></div>
         <!--Fin Animacion Slider-->
     </header>
+
     <!--Icono WhatsApp-->
-    <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=5493513051708&text=Me%20gustar%C3%ADa%20comunicarme...%20" class="float" target="_blank">
         <i class="fab fa-whatsapp my-float"></i>
         </a>
 
@@ -283,15 +284,15 @@
         <section class="section-container" id="contacto">
             <div class="container contacto">
                 <div class="row text-center">
-                    <div class="col-12 col-md-6 foto-contacto">
+                    <div class="col-12 col-md-4 foto-contacto">
                         <!--Foto seccion Formulario Contacto-->
                     </div>
-                    <div class="col-9 col-md-6">
+                    <div class="col-12 col-md-8">
                         <div class="text-center">
-                            <h2 class="section-heading text-uppercase">Formulario</h2>
+                            <h2 class="section-heading">Formulario</h2>
                             <h3 class="section-subheading">Dejanos tu consulta y nos comunicaremos a la brevedad</h3>
                         </div>
-                        <form class="formulario">
+                        <form class="formulario" id="formulario">
                             <div class="form-row justify-content-center mb-2">
                                 <div class="col-6">
                                     <input type="text" class="form-control" required placeholder="Nombre"
@@ -366,6 +367,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
         integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
         crossorigin="anonymous"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCsVs5Md2t8RItylIVAOnTlXliL5v_e3qU",
+    authDomain: "productora-2d9af.firebaseapp.com",
+    databaseURL: "https://productora-2d9af.firebaseio.com",
+    projectId: "productora-2d9af",
+    storageBucket: "productora-2d9af.appspot.com",
+    messagingSenderId: "669773035958",
+    appId: "1:669773035958:web:e67ffe83076be759b4e917",
+    measurementId: "G-SQ2BH39209"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const db = firebase.firestore();
+</script>
     <script src="js/navScripts.js"></script>
     <script src="js/scrollReveal.js"></script>
     <script src="js/app.js"></script>
