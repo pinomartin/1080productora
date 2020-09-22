@@ -5,7 +5,7 @@
   --test-color: #EDDBCD;
   --alter-color: #E39B17;
   /* --font-primary: 'Quicksand', sans-serif; */
-  --font-primary: 'Work Sans', sans-serif;
+  --font-primary: 'Kumbh Sans', sans-serif;
 }
 
 
@@ -100,7 +100,7 @@ body{
     color: #fff;
     background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.39)),
-    url(/assets/img/header1.jpg);
+    url(/assets/img/header2.jpg);
     /* background-image: url("../assets/img/header1.jpg"); */
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -180,6 +180,35 @@ body{
       margin-bottom: 4rem;
     }
   }
+
+  /*------WhatsApp Icono */
+  .float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 2px 1px 3px var(--test-color);
+    z-index:100;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .my-float{
+    margin-top:16px;
+  }
+
+  .float:hover{
+    background-color:#1fb154;
+    color: #fff;
+    transform: scale(1.1);
+  }
+
+
 
   .section-container {
     padding: 2rem 0;
@@ -402,7 +431,7 @@ p.medio{
   color: var(--alter-color);
   font: 1.6em;
   font-weight: 500;
-  text-shadow: 1px 2px 7px var(--primary-color);
+  text-shadow: 1px 2px 3px var(--primary-color);
 }
 
 
@@ -414,7 +443,9 @@ p.medio{
   
 /*Video Jumbotron*/
 
-
+.video{
+  padding: 0;
+}
 
 /*Efecto Wave*/
 @media only screen and (min-width: 768px) {
