@@ -508,11 +508,18 @@ video{
     linear-gradient(rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.349)),
     url(/assets/img/parallax.png);
     height: 50%;
-    background-position: top;
-    background-attachment: fixed;
+    background-position: center center;
+    background-attachment: scroll;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: initial;
     padding: 18rem 4rem;
+    mask-image: -webkit-gradient(linear, left top, left bottom, 
+    color-stop(0.00,  rgba(0,0,0,1)),
+    color-stop(0.35,  rgba(0,0,0,1)),
+    color-stop(0.50,  rgba(0,0,0,1)),
+    color-stop(0.65,  rgba(0,0,0,1)),
+    color-stop(0.85,  rgba(0,0,0,0.6)),
+    color-stop(1.00,  rgba(0,0,0,0)));
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
     color-stop(0.00,  rgba(0,0,0,1)),
     color-stop(0.35,  rgba(0,0,0,1)),
@@ -521,6 +528,16 @@ video{
     color-stop(0.85,  rgba(0,0,0,0.6)),
     color-stop(1.00,  rgba(0,0,0,0)));
   } 
+
+  @media only screen and (min-width: 768px) {
+    .parallax{
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    
+  }
 
 
   /*-------------Contacto-----------*/
@@ -531,7 +548,7 @@ video{
   .contacto{
     background-color: black;
     border: none;
-    border-radius: 6px 38px 18px 13px;
+    border-radius: 10px 38px 18px 13px;
     padding: 0 1rem;
   }
 

@@ -1,3 +1,4 @@
+
 /*ANIMACION SLIDER INICIO*/
 const tl = gsap.timeline({defaults: {
     ease : "power1.out"
@@ -9,6 +10,25 @@ tl.to('.intro', {y:'-100%', duration: 1.2}, "-=1");
 
 tl.fromTo('nav', {opacity: 0}, {opacity: 1, duration: 1});
 tl.fromTo('.titulo', {opacity: 0}, {opacity: 1, duration: 1} , "-=1");
+
+/*SweetAlert*/
+
+const Toast = Swal.mixin({
+    toast: true,
+    position: 'center',
+    showConfirmButton: false,
+    timer: 2000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })
+  
+  
+
+
+
 
 
 
@@ -28,7 +48,10 @@ formConsultas.addEventListener('submit', (e) => {
         telefono: formConsultas['txtTelefono'].value,
         consulta: formConsultas['txtConsulta'].value,
     }).then(() => {
-        
+        Toast.fire({
+            icon: 'success',
+            title: 'Gracias por comunicarte'
+          })       
         console.log('Guardado Correctamente')
         
         formConsultas.reset();
