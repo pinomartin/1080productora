@@ -543,26 +543,46 @@ video{
   /*-------------Contacto-----------*/
   #contacto{
     padding: 0 1rem;
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.349)),
+    url(/assets/img/backgroundform.svg);
   }
 
   .contacto{
-    background-color: black;
+    background-color: transparent;
     border: none;
     border-radius: 10px 38px 18px 13px;
     padding: 0 1rem;
   }
 
   @media only screen and (min-width: 768px) {
+
     .contacto{
       /* border: 10px double var(--primary-color); */
+      
     }
     
   }
 
   .foto-contacto{
-   background-image: url(/assets/img/header1.jpg);
+   /* background-image: url(/assets/img/backgroundform.svg); */
    background-position: center center;
    background-repeat: no-repeat;
    background-size: cover;
    border-radius: 0.8rem;
+  }
+
+  form input, form textarea{
+    border-color: var(--alter-color)!important;
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+  }
+
+  form input:focus, textarea:focus{
+    border-color:var(--primary-color)!important ;
+    box-shadow: #1fb154;
   }
