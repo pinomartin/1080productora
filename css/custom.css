@@ -6,6 +6,7 @@
   --alter-color: #E39B17;
   /* --font-primary: 'Quicksand', sans-serif; */
   --font-primary: 'Kumbh Sans', sans-serif;
+  --font-secondary: 'Arima Madurai', cursive;
 }
 
 ::-moz-selection { 
@@ -192,6 +193,7 @@ body{
 
   .text{
     font-style: italic;
+    font-family: var(--font-secondary);
   }
   
   
@@ -545,7 +547,7 @@ video{
     padding: 0 1rem;
     background-image:
     linear-gradient(rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.349)),
-    url(/assets/img/backgroundform.svg);
+    url(/assets/img/backgroundform.png);
   }
 
   .contacto{
@@ -556,9 +558,15 @@ video{
   }
 
   @media only screen and (min-width: 768px) {
-
+    
+    #contacto{
+      background-position: top;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
     .contacto{
-      /* border: 10px double var(--primary-color); */
+      padding: 2rem 1rem;
       
     }
     
@@ -574,15 +582,28 @@ video{
 
   form input, form textarea{
     border-color: var(--alter-color)!important;
+    resize: none;
   }
 
   input[type=number] {
+    appearance: textfield;
     -moz-appearance: textfield;
     -webkit-appearance: textfield;
-    appearance: textfield;
+    
   }
 
   form input:focus, textarea:focus{
     border-color:var(--primary-color)!important ;
     box-shadow: #1fb154;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus{
+    border-color:var(--primary-color)!important;
+    -webkit-text-fill-color: var(--primary-color);
+    transition: background-color 5000s ease-in-out 0s;
   }
