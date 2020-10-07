@@ -126,7 +126,7 @@ const parrafoAbout = {
     },          
     scale: 1,
     desktop: true, 
-    mobile: false 
+    mobile: true 
 }
 sr.reveal('.parrafo', parrafoAbout);
 

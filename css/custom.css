@@ -4,6 +4,7 @@
   --background-color: #1D1C22;
   --test-color: #EDDBCD;
   --alter-color: #E39B17;
+  --icons-color: #605e68;
   /* --font-primary: 'Quicksand', sans-serif; */
   --font-primary: 'Kumbh Sans', sans-serif;
   --font-secondary: 'Arima Madurai', cursive;
@@ -25,6 +26,17 @@
 body{
   background-color: var(--background-color);
   font-family: var(--font-primary);
+}
+/*ScrollBar Style*/
+body::-webkit-scrollbar{
+  width: 10px;
+  background: var(--background-color);
+}
+
+body::-webkit-scrollbar-thumb{
+  background: var(--alter-color);
+  border-radius: 10px;
+  border-right: 2px solid var(--background-color);
 }
 
 
@@ -373,7 +385,7 @@ p.medio{
 
 
 
-  /* span.service-icon{
+  /* span.service-icon
     background-color: var(--primary-color);
     display: inline-block;
     font-size: 35px;
@@ -606,4 +618,33 @@ video{
     border-color:var(--primary-color)!important;
     -webkit-text-fill-color: var(--primary-color);
     transition: background-color 5000s ease-in-out 0s;
+  }
+
+
+  /*--------Footer*/
+.footer-container{
+  background-color: var(--alter-color);
+}
+
+  .iconos-footer{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .iconos-footer li a{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--font-primary);
+    font-size: 2em;
+    transition: all 0.2s ease;
+  
+  }
+
+  .iconos-footer li a:hover{
+    color: var(--test-color);
+    transform: scale(1.2);
   }
