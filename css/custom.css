@@ -314,12 +314,23 @@ body::-webkit-scrollbar-thumb{
     display: grid;
     padding: 0.2rem;
     margin-bottom: 2rem;
-    border-radius: 8px;
-}
+    border-radius: 10px;
+    
+  }
 
+  
 .card-flip, .card-container {
     transform-style: preserve-3d;
     transition: all 0.9s ease;
+}
+
+.card-container:hover{
+  -webkit-box-shadow: 10px 10px 125px -14px rgba(102,232,255,0.80);
+  -moz-box-shadow: 10px 10px 125px -14px rgba(102,232,255,0.80);
+  box-shadow: 1px 10px 1500px -70px var(--alter-color);
+  background-color: #fca12a07;
+  
+  transform: scale(1.10)
 }
 
 .card-flip {
@@ -327,7 +338,7 @@ body::-webkit-scrollbar-thumb{
   grid-template: 1fr / 1fr;
   grid-template-areas: "frontAndBack";
   transform-style: preserve-3d;
-  transition: all 0.9s ease;
+  transition: transform 1.9s ease;
   color: var(--primary-color);
   text-transform: uppercase;
 }
@@ -342,11 +353,24 @@ body::-webkit-scrollbar-thumb{
 .front {
   grid-area: frontAndBack;
   background-color: transparent;
+  transition: all 1s ease-in-out;
+}
+
+.front:hover{
+  transform: scale(0.8);
+  -webkit-box-shadow: 10px 10px 125px -14px rgba(102,232,255,0.80);
+  -moz-box-shadow: 10px 10px 125px -14px rgba(102,232,255,0.80);
+  box-shadow: 10px 10px 15px -70px var(--alter-color);
+}
+
+.front img{
+
 }
 
 .front h4 {
   padding: 1rem 0 1rem 0;
 }
+
 
 .back {
     transform: rotateY(-180deg);
@@ -364,11 +388,27 @@ body::-webkit-scrollbar-thumb{
 }
 
 p.medio{
-  padding: 4em 0 0 0;
+  padding: 5em 0 0 0;
+  line-height: 2em;
+}
+
+.foco-flip{
+  margin-top: 2.3em;
 }
 
 .card-container:hover .card-flip {
-    transform: rotateY(180deg);
+    -webkit-animation:  rotate 1.3s forwards 0.5s;
+    animation: rotate 1.3s forwards 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rotate{
+  0% {
+    transform: rotateY(0deg);
+  }
+100% {
+  transform: rotateY(180deg);
+}
 }
 
 
@@ -376,6 +416,14 @@ p.medio{
 .card-container{
   margin: 0.5rem;
   padding: 1rem;
+}
+
+p.medio{
+  padding: 4em 0 0 0;
+}
+
+.foco{
+  margin-bottom: 1.3rem;
 }
 
 
@@ -526,7 +574,7 @@ video{
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: initial;
-    padding: 18rem 4rem;
+    padding: 10rem 4rem;
     mask-image: -webkit-gradient(linear, left top, left bottom, 
     color-stop(0.00,  rgba(0,0,0,1)),
     color-stop(0.35,  rgba(0,0,0,1)),
@@ -551,6 +599,17 @@ video{
     background-size: cover;
     }
     
+  }
+
+  .youtube{
+    border-radius: 30px;
+    border: 2px solid var(--alter-color);
+    transition: all 0.4s ease-in-out;
+  }
+
+  .youtube:hover{
+    transform: scale(1.05);
+    border: 2px solid var(--test-color);
   }
 
 
