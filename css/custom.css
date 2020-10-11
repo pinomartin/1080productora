@@ -388,9 +388,10 @@ body::-webkit-scrollbar-thumb{
 }
 
 p.medio{
-  padding: 5em 0 0 0;
+  padding: 4.5em 0 0 0;
   line-height: 2em;
 }
+
 
 .foco-flip{
   margin-top: 2.3em;
@@ -420,6 +421,11 @@ p.medio{
 
 p.medio{
   padding: 4em 0 0 0;
+}
+
+p.backtext-graf{
+  margin-top: 0.5em;
+  line-height: 2em;  
 }
 
 .foco{
@@ -511,9 +517,9 @@ p.medio{
 .about p {
   color: var(--secondary-color);
   font-size: 1.4em;
-  line-height: 1.8rem;
-  font-weight: 300;
-  letter-spacing: 2px;
+  line-height: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
   margin-bottom: 2rem;
   text-align: center;
   text-transform: uppercase;
@@ -528,7 +534,13 @@ p.medio{
   text-shadow: 1px 2px 3px var(--primary-color);
 }
 
-
+@media only screen and (min-width: 768px) {
+  .about p{
+    line-height: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: 350;
+  }
+}
 
 /*-------------------------*/
 
