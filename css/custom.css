@@ -550,14 +550,23 @@ p.backtext-graf{
 /*Video Jumbotron*/
 
 .video{
+  position: relative;
   padding: 0;
+}
+
+.video::after{
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  top: 	-55px;
+  left: 0px;
+  content: url(/assets/wave.svg);
 }
 
 /*Efecto Wave*/
 @media only screen and (min-width: 768px) {
   .video{
-    position: relative;
-    padding: 0rem 0rem 0rem 0rem;
     text-align: center;
     
   }
@@ -582,11 +591,12 @@ video{
     linear-gradient(rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.349)),
     url(/assets/img/parallax.png);
     height: 50%;
+    background-color: var(--alter-color);
     background-position: center center;
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: initial;
-    padding: 10rem 4rem;
+    padding: 8rem 4rem 10rem 4rem;
     mask-image: -webkit-gradient(linear, left top, left bottom, 
     color-stop(0.00,  rgba(0,0,0,1)),
     color-stop(0.35,  rgba(0,0,0,1)),
@@ -676,8 +686,12 @@ video{
   }
 
   form input:focus, textarea:focus{
-    border-color:var(--primary-color)!important ;
-    box-shadow: #1fb154;
+    border-color:var(--primary-color)!important;
+    box-shadow: 0 0 0px 1000px #303841 inset, 0 0 8px var(--primary-color)!important;
+    -webkit-box-shadow: 0 0 0px 1000px #303841 inset, 0 0 8px var(--primary-color);
+    outline: 0 none;
+    color: var(--primary-color);
+    -webkit-text-fill-color: var(--alter-color);
   }
 
   input:-webkit-autofill,
