@@ -666,7 +666,7 @@ video{
       padding: 0rem;
     }
     .contacto{
-      padding: 2.5rem 1rem;
+      padding: 4rem 1rem;
       
     }
     
@@ -740,4 +740,17 @@ video{
   .iconos-footer li a:hover{
     color: var(--test-color);
     transform: scale(1.2);
+  }
+
+  .autor{
+    background-color: var(--background-color);
+    padding: 0.5rem;
+  }
+
+  .autor a {
+    color: var(--alter-color);
+    font-family: var(--font-secondary);
+    font-size: 0.9em;
+    padding: 0.5rem;
+    text-decoration: none;
   }
