@@ -250,11 +250,14 @@ body::-webkit-scrollbar-thumb{
     }
   }
 
-
-
   .section-container {
     padding: 2rem 0;
   }
+
+  .no-padding{
+    padding: 0rem;
+  }
+
   .section-container h2.section-heading {
     font-size: 2.5rem;
     margin-top: 0;
@@ -276,6 +279,9 @@ body::-webkit-scrollbar-thumb{
     } */
     .section-container{
       padding: 6rem 0;
+    }
+    .no-padding{
+      padding: 0rem;
     }
   }
 
@@ -575,7 +581,7 @@ p.backtext-graf{
   position: absolute;
   width: 100%;
   height: 0px;
-  top: 	-250px;
+  top: 	-300px;
   left: 0px;
   content: url(/assets/wave.svg);
 }}
@@ -596,7 +602,7 @@ video{
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: initial;
-    padding: 8rem 4rem 10rem 4rem;
+    padding: 10rem 4rem 10rem 4rem;
     mask-image: -webkit-gradient(linear, left top, left bottom, 
     color-stop(0.00,  rgba(0,0,0,1)),
     color-stop(0.35,  rgba(0,0,0,1)),
@@ -657,9 +663,10 @@ video{
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-size: cover;
+      padding: 0rem;
     }
     .contacto{
-      padding: 2rem 1rem;
+      padding: 2.5rem 1rem;
       
     }
     
@@ -709,6 +716,7 @@ video{
   /*--------Footer*/
 .footer-container{
   background-color: var(--alter-color);
+  padding: 2rem;
 }
 
   .iconos-footer{
