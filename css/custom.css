@@ -64,7 +64,14 @@ body::-webkit-scrollbar-thumb{
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+    transition: all 2s ease-in-out;
   }
+
+  .navbar-brand:hover{
+    filter: brightness(1.2);
+    
+  }
+
   #mainNav .navbar-brand img {
     height: 1.5em;
   }
@@ -575,12 +582,31 @@ p.backtext-graf{
   position: absolute;
   width: 100%;
   height: 0px;
-  top: 	-55px;
+  top: 	-20vw;
   left: 0px;
   content: url(/assets/wave.svg);
 }
 
 /*Efecto Wave*/
+/* @media only screen and (min-width: 350px) {
+  .video{
+    text-align: center;
+    
+  }
+.video::after{
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  top: 	-70px;
+  left: 0px;
+  content: url(/assets/wave.svg);
+}} */
+
+
+
+
+
 @media only screen and (min-width: 768px) {
   .video{
     text-align: center;
@@ -591,7 +617,7 @@ p.backtext-graf{
   position: absolute;
   width: 100%;
   height: 0px;
-  top: 	-300px;
+  top: 	-18vw;
   left: 0px;
   content: url(/assets/wave.svg);
 }}
@@ -612,7 +638,7 @@ video{
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: initial;
-    padding: 10rem 4rem 10rem 4rem;
+    padding: 1rem 4rem 10rem 4rem;
     mask-image: -webkit-gradient(linear, left top, left bottom, 
     color-stop(0.00,  rgba(0,0,0,1)),
     color-stop(0.35,  rgba(0,0,0,1)),
@@ -635,6 +661,7 @@ video{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 8rem;
     }
     
   }
