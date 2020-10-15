@@ -150,7 +150,7 @@ sr.reveal('.card-container', servicesMobile );
 //********Youtube Videos Section*********//
 /**Desktop */
 const youtubeLeft = {
-    delay: 50 ,
+    delay: 100 ,
     distance: '100%', 
     duration: 1800, 
     easing: 'ease-in-out', 
@@ -168,7 +168,7 @@ const youtubeLeft = {
 }
 
 const youtubeRight = {
-    delay: 50 ,
+    delay: 100 ,
     distance: '100%', 
     duration: 1800, 
     easing: 'ease-in-out', 
@@ -198,7 +198,7 @@ sr.reveal('.youtube', servicesMobile );
 
 
 const footerIconLeft = {
-    delay: 50 ,
+    delay: 100 ,
     distance: '100%', 
     duration: 2000, 
     easing: 'ease-in-out', 
@@ -216,7 +216,7 @@ const footerIconLeft = {
 }
 
 const footerIconRight = {
-    delay: 50 ,
+    delay: 100 ,
     distance: '100%', 
     duration: 2000, 
     easing: 'ease-in-out', 
