@@ -652,7 +652,7 @@ video{
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: initial;
-    padding: 1rem 3rem 10rem 3rem;
+    padding: 1rem 4rem 6rem 4rem;
     mask-image: -webkit-gradient(linear, left top, left bottom, 
     color-stop(0.00,  rgba(0,0,0,1)),
     color-stop(0.35,  rgba(0,0,0,1)),
