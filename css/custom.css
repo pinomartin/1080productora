@@ -651,7 +651,7 @@ video{
     background-position: center center;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    background-size: initial;
+    background-size: cover;
     padding: 1rem 4rem 1rem 4rem;
     mask-image: -webkit-gradient(linear, left top, left bottom, 
     color-stop(0.00,  rgba(0,0,0,1)),
@@ -692,6 +692,9 @@ video{
     border: 2px solid var(--test-color);
   }
 
+  .btn-youtube{
+    margin: 3.5rem 0 10rem;
+  }
 
   /*-------------Contacto-----------*/
   #contacto{

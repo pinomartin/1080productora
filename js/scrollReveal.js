@@ -93,7 +93,7 @@ const parrafoAbout = {
     distance: '20%', 
     duration: 1500, 
     easing: 'ease-in-out', 
-    interval: 500, 
+    interval: 600, 
     opacity: 0, 
     origin: 'bottom',
     rotate: {
@@ -113,7 +113,7 @@ const services = {
     distance: '0%', 
     duration: 1500, 
     easing: 'ease-in-out', 
-    interval: 500, 
+    interval: 600, 
     opacity: 0, 
     origin: 'bottom',
     rotate: {
@@ -131,7 +131,7 @@ const servicesMobile = {
     distance: '50%', 
     duration: 1500, 
     easing: 'ease-in-out', 
-    interval: 500, 
+    interval: 600, 
     opacity: 0, 
     origin: 'bottom',
     rotate: {
@@ -154,7 +154,7 @@ const youtubeLeft = {
     distance: '100%', 
     duration: 1800, 
     easing: 'ease-in-out', 
-    interval: 400, 
+    interval: 600, 
     opacity: 0, 
     origin: 'left',
     rotate: {
@@ -172,7 +172,7 @@ const youtubeRight = {
     distance: '100%', 
     duration: 1800, 
     easing: 'ease-in-out', 
-    interval: 400, 
+    interval: 600, 
     opacity: 0, 
     origin: 'right',
     rotate: {
